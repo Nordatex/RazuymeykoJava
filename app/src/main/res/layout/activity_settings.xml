@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings"
+    android:background="@drawable/colorandroid">
+
+    <ImageView
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/settings_icon"
+        app:layout_constraintBottom_toTopOf="@+id/settings_geo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/settings_geo"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/button_custom"
+        android:padding="5sp"
+        android:text="Профиль"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/settings_safety"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/settings_safety"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/button_custom"
+        android:padding="5sp"
+        android:text="Безопасность"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/settings_notifications"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/settings_notifications"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/button_custom"
+        android:padding="5sp"
+        android:text="Уведомления"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/settings_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/settings_back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_custom"
+        android:padding="5sp"
+        android:text="Назад"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
